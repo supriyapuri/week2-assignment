@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  display: block;
+  margin: 100px;
+  font-size: 12;
+}
+
+h2 {
+  display: block;
+  font-size: 8;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-align: left;
+}
+
+id{
+  color: gray
+}
+
+
+
+
+.cards_foryou {
+  
+  margin:20 auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards_missed{
+
+  margin:20 auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4;
+  text-align: left;
+}
+
+.card{
+  
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+}
+
+.card2{
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-rows: 50% 30% 20%;
+  gap: 30px;
+
+}
+
+.card_image{
+  align: auto;
+  width:100%;
+  height: 100%;
+  display: block;
+}
+
+.card_image2{
+
+  align: auto;
+  width:100%;
+  height: 50%;
+  display: block;
+
+}
+
+
+
+.top_condition{
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+
+}
+
+.audio{
+  font-size: 50% ;
+  vertical-align: auto;
+  text-align: left;
+  color: grey
+
+  
+}
+
+
+.card_content{
+  text-align: left;
+  display: grid;
+  grid-template-rows: 68% 32%;
+  gap: 10px;
+
+}
+
+.content_bottom{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  gap: 2px;
+  
+}
+
+
+
+
+
+.description{
+  font-size: 4;
+  color: gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description2{
+  font-size: 4;
+  color:gray;
+}
+
+.author_image1{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.author_image2{
+  border-radius: 50%;
+  width: 50px;
+  border:3px solid rgb(2, 153, 2);
+}
+
+.author_name{
+  font-size: 50%;
+  font-family: sans-serif;
+  
+
+}
+
+.doc_details{
+  font-size: 30%;
+  color: gray;
+  font-family: sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
