@@ -42,6 +42,7 @@ body {
   display: block;
   margin: 100px;
   font-size: 12;
+  line-height:1.5;
 }
 
 h2 {
@@ -58,8 +59,6 @@ h2 {
 id{
   color: gray
 }
-
-
 
 
 .cards_foryou {
@@ -95,10 +94,12 @@ id{
 .card2{
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   display: grid;
-  grid-template-rows: 50% 30% 20%;
-  gap: 30px;
+  grid-template-rows: 40% 60%;
+  
 
 }
+
+
 
 .card_image{
   align: auto;
@@ -109,19 +110,25 @@ id{
 
 .card_image2{
 
-  align: auto;
-  width:100%;
-  height: 50%;
-  display: block;
+  width: 100%; /* width of container */
+  height: 150px; /* height of container */
+  overflow: hidden;
 
 }
 
+.card_image2 img {
+  margin: -10px 0px 0px -180px;
+}
 
 
 .top_condition{
   display: grid;
   grid-template-columns: 10% 70% 20%;
 
+}
+
+.title{
+  padding: 10px
 }
 
 .audio{
@@ -146,6 +153,7 @@ id{
   display: grid;
   grid-template-columns: 20% 60% 20%;
   gap: 2px;
+  padding: 10px
   
 }
 
@@ -157,26 +165,32 @@ id{
   font-size: 4;
   color: gray;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 .description2{
-  font-size: 4;
   color:gray;
+  height: 20px;
+  
+
 }
 
 .author_image1{
   border-radius: 50%;
   width: 50px;
+  
+  
 }
 
 .author_image2{
   border-radius: 50%;
   width: 50px;
-  border:3px solid rgb(2, 153, 2);
+  border:3px solid #02b875;
+  
 }
 
 .author_name{
-  font-size: 50%;
+  font-size: 12px;
   font-family: sans-serif;
   
 
