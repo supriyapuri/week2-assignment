@@ -10,9 +10,9 @@ export default class MissedArticleSection extends React.Component {
                 <h2>In case you missed it</h2>
                 <hr />
                     <div className= "cards_missed">
-                        {missedArticle.map((card)=> 
+                        {missedArticle.map((card, idx)=> 
                    
-                        <MissedArticleCard card={card} /> 
+                        <MissedArticleCard card={card} id={"missed-card-"+idx} /> 
                   
                         )}
                   </div>

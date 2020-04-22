@@ -6,6 +6,7 @@ import ForYouSection from './ForYouSection';
 import MissedArticleSection from './MissedArticleSection'
 
 
+
 class Screen extends React.Component {
     static propTypes = {
         forYouSection: PropTypes.arrayOf(
@@ -46,10 +47,14 @@ class Screen extends React.Component {
 
     constructor(props) {
         super(props);
+
          this.state= {
              forYouSection: foryouSection,
-             missedArticle: missedArticle
+             missedArticle: missedArticle,
+  
         }
+
+
     }
 
     renderForYouSection() {
@@ -59,6 +64,29 @@ class Screen extends React.Component {
     renderMissedArticleSection() {
     return <MissedArticleSection missedArticle={this.state.missedArticle}/>;
     }
+
+    //tried to use handleBookmark here to avoid defining it in each section
+    // handleBookmark = (e) => { 
+    //     console.log("Hello");
+    //     console.log(this.state.forYouSection.isBookmarked);
+    //     e.preventDefault();
+    //     // console.log(e.target);
+
+    //     if(!this.state.isBookmarked){
+    //       document.getElementById(e.target.id).classList.add("bookmark");
+
+    //     }
+    //     else
+    //     {
+    //         document.getElementById(e.target.id).classList.remove("bookmark");
+    //     }
+        
+        
+        
+    //     this.setState((prevState) =>{
+    //         return {isBookmarked:!prevState.isBookmarked};
+    //     })
+    //   }
 
     render(){
         return(
