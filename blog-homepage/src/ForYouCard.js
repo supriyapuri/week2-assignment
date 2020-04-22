@@ -46,7 +46,7 @@ export default class ForYouCard extends React.Component {
             
                 <div className= "card_foryou" id= {this.props.id}>
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"></link>
-                    <a href = {this.props.card.link}><img src={this.props.card.image} alt=" " className= "card_image"/></a>
+                    <a href = {this.props.card.link}><img src={this.props.card.image} alt=" " className= "card_image_foryou"/></a>
                     <div className= "card_text">
                         <div className="article_details">
                             <div className= "icons">
@@ -55,7 +55,7 @@ export default class ForYouCard extends React.Component {
                                 {memberPreview ? (<i className="material-icons">star_outline</i>) : null}
                             </div>
                             <h3><a href = {this.props.card.link}>{this.props.card.title}</a></h3>
-                            <p className= "description"><a href = {this.props.card.link}>{this.props.card.description}</a></p>
+                            <p className= "description_foryou"><a href = {this.props.card.link}>{this.props.card.description}</a></p>
                         </div>
                         <div className= "additional_details">
                             <div className = "author_image">

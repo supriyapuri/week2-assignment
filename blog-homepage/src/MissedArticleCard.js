@@ -50,7 +50,7 @@ export default class MissedArticleCard extends React.Component{
 
             <div className= "card_missed" id= {this.props.id}>
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"></link>
-                <a href = {this.props.card.link}><img src={this.props.card.image} alt=" " className= "card_image2" /></a>
+                <a href = {this.props.card.link}><img src={this.props.card.image} alt=" " className= "card_image_missed_article" /></a>
                 <div className= "card_text">
                      <div className="article_details">
                             <div className= "icons">
@@ -60,7 +60,7 @@ export default class MissedArticleCard extends React.Component{
                             </div>
                             <div className = "title">
                                 <h3><a href = {this.props.card.link}>{this.props.card.title}</a></h3>
-                                <p className= "description2"><a href = {this.props.card.link}>{this.props.card.description}</a></p>
+                                <p className= "description_missed_article"><a href = {this.props.card.link}>{this.props.card.description}</a></p>
                                 
                             </div>
                             

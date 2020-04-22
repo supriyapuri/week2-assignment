@@ -104,29 +104,26 @@ id{
   display: grid;
   grid-template-rows: 40% 60%;
   
-
 }
 
 
 
-.card_image{
-  align: auto;
+.card_image_foryou{
+  object-fit: cover;
   width:100%;
   height: 100%;
   display: block;
 }
 
-.card_image2{
-
+.card_image_missed_article{
+  object-fit: cover;
   width: 100%; /* width of container */
   height: 150px; /* height of container */
   overflow: hidden;
 
 }
 
-.card_image2 img {
-  margin: -10px 0px 0px -180px;
-}
+
 
 
 .icons{
@@ -169,14 +166,14 @@ id{
 
 
 
-.description{
+.description_foryou{
   font-size: 4;
   color: gray;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 
-.description2{
+.description_missed_article{
   color:gray;
   height: 20px;
   

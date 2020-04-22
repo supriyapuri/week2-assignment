@@ -16,7 +16,7 @@ export default class ForYouSection extends React.Component {
                     <div className= "cards_foryou">
                         {forYouSection.map((card, idx)=> 
                 
-                        <ForYouCard card={card} id={"for-you-card-"+idx} /> 
+                        <ForYouCard card={card} id={"for-you-card-"+idx} key={idx} /> 
                 
                         )}
                 </div>
