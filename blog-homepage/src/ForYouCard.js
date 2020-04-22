@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthorBio from './AuthorBio';
 
 
 export default class ForYouCard extends React.Component {
@@ -58,19 +59,16 @@ export default class ForYouCard extends React.Component {
                             <p className= "description_foryou"><a href = {this.props.card.link}>{this.props.card.description}</a></p>
                         </div>
                         <div className= "additional_details">
-                            <div className = "author_image">
-                                {isMediumMember? (<img src={this.props.card.author.image} alt=" " className= "author_image2" />) 
-                                : (<img src={this.props.card.author.image} alt=" " className= "author_image1" />)}
+                            <div className = "content_bottom">
+                                <AuthorBio image={this.props.card.author.image} authorName ={this.props.card.author.name} isMediumMember= {isMediumMember} />
+                                <i className="material-icons" id={this.props.id+"-bookmark"} onClick={this.handleBookmark}>bookmark_border</i>
+                             </div>
+                             <div className= "doc_details">
+                                 <div></div>
+                                <p >{updatedDate} . {this.props.card.minutesToRead} min read </p>
+                                <div></div>
+                            </div>
 
-                            </div>
-                            
-                            <div className = "additional_details_text">
-                                <p className= "author_name">{this.props.card.author.name}</p>
-                                <p className= "doc_details">{updatedDate} . {this.props.card.minutesToRead} min read </p>
-                            </div>
-                            
-                            <i className="material-icons" id={this.props.id+"-bookmark"} onClick={this.handleBookmark}>bookmark_border</i>
-                            
                         </div>
                     </div>
 

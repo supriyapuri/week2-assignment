@@ -156,12 +156,30 @@ id{
 
 .additional_details{
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 60% 40%;
   gap: 2px;
   padding: 10px
   
 }
 
+.author_details{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 2px;
+}
+
+.content_bottom{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 2px;
+}
+
+.doc_details{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  gap: 2px;
+
+}
 
 
 
