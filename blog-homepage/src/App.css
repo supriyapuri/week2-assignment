@@ -38,6 +38,12 @@
 }
 
 
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+
 body {
   display: block;
   margin: 100px;
@@ -69,6 +75,7 @@ id{
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .cards_missed{
@@ -83,15 +90,16 @@ id{
   text-align: left;
 }
 
-.card{
+.card_foryou{
   
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 10px;
+  
 }
 
-.card2{
+.card_missed{
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   display: grid;
   grid-template-rows: 40% 60%;
@@ -121,7 +129,7 @@ id{
 }
 
 
-.top_condition{
+.icons{
   display: grid;
   grid-template-columns: 10% 70% 20%;
 
@@ -141,7 +149,7 @@ id{
 }
 
 
-.card_content{
+.card_text{
   text-align: left;
   display: grid;
   grid-template-rows: 68% 32%;
@@ -149,7 +157,7 @@ id{
 
 }
 
-.content_bottom{
+.additional_details{
   display: grid;
   grid-template-columns: 20% 60% 20%;
   gap: 2px;
@@ -202,6 +210,14 @@ id{
   font-family: sans-serif;
 
 }
+
+.bookmark{
+  color: #02b875;
+  
+
+}
+
+
 
 
 
